@@ -28,7 +28,7 @@ Capybara.default_driver = :selenium
 
 # timeou
 
-Capybara.default_max_wait_time = 6
+Capybara.default_max_wait_time = 20
 
 # $wait = Selenium::WebDriver::Wait.new(:timeout => 20)
 
