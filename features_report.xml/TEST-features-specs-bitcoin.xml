@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="1" errors="0" skipped="0" tests="1" time="5.881381" name="Investimento Bitcoin">
+<testcase classname="Investimento Bitcoin" name="Bitcoin" time="5.881381">
+  <failure message="failed Bitcoin" type="failed">
+    <![CDATA[CenÃ¡rio: Bitcoin
+
+Example row: 
+
+Message:
+]]>
+    <![CDATA[cannot attach file, ‰PNG
+ does not exist (Capybara::FileNotFound)
+./features/page/bitcoin.rb:44:in `bitcoins'
+./features/step_definitions/bitcoin.rb:3:in `"que inicie o investimento bitcoin"'
+features/specs/bitcoin.feature:6:in `Dado que inicie o investimento bitcoin']]>
+  </failure>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>
