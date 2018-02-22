@@ -41,7 +41,7 @@ class Bitcoin < SitePrism::Page
     cpf.set('39118165885')
     password.visible?
     password.set('vinicius3265!')
-attach_file('screenshot', File.new(page.save_screenshot(File.join(Dir.pwd, "results/#{UUID.new.generate}.png"))))
+# attach_file('screenshot', File.new(page.save_screenshot(File.join(Dir.pwd, "results/#{UUID.new.generate}.png"))))
   end
 end
 #     signup.visible?
