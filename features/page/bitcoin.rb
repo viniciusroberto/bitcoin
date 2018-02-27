@@ -36,7 +36,7 @@ class Bitcoin < SitePrism::Page
   def bitcoins
     # f = File.new('output.xml', 'w')
     # f.write(log)
-    visit 'https://www.mercadobitcoin.com.br/conta/login/'
+    visit $url_minha_claro
     cpf.visible?
     cpf.set('39118165885')
     password.visible?

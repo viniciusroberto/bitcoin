@@ -45,6 +45,16 @@ Capybara.default_max_wait_time = 20
 Capybara.page.driver.browser.manage.window.maximize
 
 
+$env = (ENV['ENV'] || 'rainha')
+puts 'Programa executado no ambiente - ' + $env
+
+if $env == 'escondida'
+  $url_minha_claro = 'https://minhaclaroescondida.claro.com.br'
+elsif $env == 'rainha'
+  $url_minha_claro = 'http://rainha.claro.com.br'
+end
+
+
 #########################################################
 
 class SimpleCov::Formatter::MergedFormatter

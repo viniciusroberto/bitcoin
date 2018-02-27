@@ -40,11 +40,11 @@ metric_fu shift the first line
      def bitcoins
 --     # f = File.new('output.xml', 'w')
 --     # f.write(log)
-       visit 'https://www.mercadobitcoin.com.br/conta/login/'
+       visit $url_minha_claro
        cpf.visible?
-       cpf.set('39118165885')
-       password.visible?
-       password.set('vinicius3265!')
+!!     cpf.set('39118165885')
+!!     password.visible?
+!!     password.set('vinicius3265!')
 -- # attach_file('screenshot', File.new(page.save_screenshot(File.join(Dir.pwd, "results/#{UUID.new.generate}.png"))))
 --   end
 -- end
