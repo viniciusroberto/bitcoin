@@ -37,10 +37,10 @@ class Bitcoin < SitePrism::Page
     # f = File.new('output.xml', 'w')
     # f.write(log)
     visit $url_minha_claro
-    cpf.visible?
-    cpf.set('39118165885')
-    password.visible?
-    password.set('vinicius3265!')
+    # cpf.visible?
+    # cpf.set('39118165885')
+    # password.visible?
+    # password.set('vinicius3265!')
 # attach_file('screenshot', File.new(page.save_screenshot(File.join(Dir.pwd, "results/#{UUID.new.generate}.png"))))
   end
 end
