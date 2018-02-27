@@ -49,9 +49,9 @@ $env = (ENV['ENV'] || 'rainha')
 puts 'Programa executado no ambiente - ' + $env
 
 if $env == 'escondida'
-  $url_minha_claro = 'https://minhaclaroescondida.claro.com.br'
+  $url_minha_claro = 'https://bing.com.br'
 elsif $env == 'rainha'
-  $url_minha_claro = 'http://rainha.claro.com.br'
+  $url_minha_claro = 'http://google.com.br'
 end
 
 
