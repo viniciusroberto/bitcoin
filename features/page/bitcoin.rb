@@ -14,7 +14,7 @@ class Bitcoin < SitePrism::Page
   #element :btnproximosenha, :xpath, "//*[@id='passwordNext']/content/span"
   element :btnproximosenha, :xpath, "//*[@id='passwordNext']/content/span"
   element :menulogin, :xpath, "//*[@id='gb']/div[1]/div[1]/div[2]/div[5]/div[1]/a/span"
-  element :validarlogin, :xpath, "//*[@id='gb']/div[1]/div[1]/div[2]/div[5]/div[2]"
+  element :validarlogin, :xpath, "//*[@id='gb']/div[1]/div[1]/div[2]/div[5]/div[2]" #comentario novo
   element :btnEscrever, :css, '.T-I.J-J5-Ji.T-I-KE.L3'
   element :destinatarios, :css, '.vO'
   element :assunto, :css, '.aoT'
