@@ -1,0 +1,28 @@
+name: OWASP ZAP Scan
+
+on:
+  workflow_dispatch:  # Permite executar manualmente pelo GitHub Actions
+
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do Código
+        uses: actions/checkout@v4
+
+      - name: Instalar OWASP ZAP
+        run: |
+          sudo apt update
+          sudo apt install zaproxy -y
+
+      - name: Executar ZAP Scan no OrangeTesting
+        run: |
+          zap-cli quick-scan --self-contained --start-options '-config api.disablekey=true' \
+          -r -f xml -o zap_report.xml https://orangetesting.com/
+
+      - name: Upload do Report como Artefato
+        uses: actions/upload-artifact@v4
+        with:
+          name: zap-report
+          path: zap_report.xml
